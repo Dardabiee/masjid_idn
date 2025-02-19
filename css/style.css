@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #F5F7FA;
+}
+
+/* HEADER */
+header {
+    background: white;
+    padding: 15px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* LOGO */
+.logo img {
+    height: 50px;
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #008080;
+}
+.home {
+    width: 100%;
+    /* height: 100%; */
+    min-height: 80vh; 
+    background: #F5F7FA;
+    padding: 80px 10%;
+     background: url("https://img.freepik.com/free-vector/flat-arabic-pattern-background_79603-1826.jpg?t=st=1739850225~exp=1739853825~hmac=90d35de838cab209ff9434c04d815b73522fa768f54193f530e0581c6fc65ca5&w=1800") no-repeat center;
+    background-size: cover; 
+} 
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;  
+    margin: 10rem auto;
+}
+
+.address-container {
+    flex: 1;
+}
+
+.address-container h2 {
+    font-size: 15px;
+    background-color: rgba(0, 128, 128, 0.55);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 400;
+    color: white;
+    display: inline-block;
+}
+
+.address-container h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 15px;
+}
+
+.address-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.cta-button {
+    background-color: rgba(0, 128, 128, 0.55);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.image-container img {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+}
+.prayer{
+    margin: 20px;
+    padding: 10px 10%;
+}
+.prayer-header h1{
+    margin-top: 40px;
+    font-size: 2 9px;
+}
+.prayer-header p{
+    margin: 40px 0;
+    padding: 10px ;
+}
+.prayer-header{
+    display: flex;
+    gap: 10rem;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .address-container h1 {
+        font-size: 32px;
+    }
+
+    .image-container img {
+        max-width: 80%;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
